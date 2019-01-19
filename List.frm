@@ -705,7 +705,7 @@ For X = 0 To 8
 Text1(X).Text = ""
 Next
 
-Add.Enabled = False
+add.Enabled = False
 
 Open "C:\Users\Tan Nguyen\Desktop\EveryBook\version.txt" For Input As #4
 Input #4, systemversion
@@ -781,16 +781,16 @@ Combo1.AddItem "ISBN"
 For X = 0 To 8
 Text1(X).Text = ""
 Next X
-Add.Enabled = False
+add.Enabled = False
 gosearch.Enabled = False
 
-Open "C:\Users\Tan Nguyen\Desktop\EveryBook\version.txt" For Input As #20
+Open "C:\Users\Tan Nguyen\Documents\School\Period A - Computer Science\EveryBook\version.txt" For Input As #20
 Input #20, systemversion
 Close #20
 userversion = systemversion
 
 Dim Index As Integer
-Open "C:\Users\Tan Nguyen\Desktop\EveryBook\whatfile.txt" For Input As #10
+Open "C:\Users\Tan Nguyen\Documents\School\Period A - Computer Science\EveryBook" For Input As #10
 Input #10, Index
 Close #10
 
@@ -930,7 +930,7 @@ If KeyAscii = 13 Then Call gosearch_Click
 End Sub
 
 Private Sub Text1_Change(Index As Integer)
-Add.Enabled = True
+add.Enabled = True
 End Sub
 
 Private Sub Timer1_Timer()

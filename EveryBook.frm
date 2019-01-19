@@ -349,7 +349,7 @@ End Sub
 
 
 Private Sub subBut_Click(Index As Integer)
-Open "C:\Users\Tan Nguyen\Desktop\EveryBook\whatfile.txt" For Output As #1
+Open "C:\Users\Tan Nguyen\Documents\School\Period A - Computer Science\EveryBook\whatfile.txt" For Output As #1
 Write #1, Index
 Close #1
 Load List
